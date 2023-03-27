@@ -7,6 +7,7 @@ from model.utils.helpers import scroll_to_element
 class FeedbackPage:
 
     def select_question(self, value):
+        browser.element(".button-ui.button-ui_brand").should(be.clickable).click()
         DropDown(browser.element(".select2-selection__arrow")).set_dropdown(".select2-search__field", value)
         return self
 

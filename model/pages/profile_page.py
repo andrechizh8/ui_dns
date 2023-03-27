@@ -42,4 +42,6 @@ class ProfilePage:
     def check_nickname_change(self):
         nickname = browser.element('[name="ProfileSettingsForm[nickname]"]')().get_attribute('value')
         browser.element('.user-settings-info__nickname').should(have.text(nickname))
+        time.sleep(3)
+        browser.element(".logo-container__logout").click()
         return self

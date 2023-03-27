@@ -162,8 +162,14 @@ class TestUi:
         # WHEN
         with allure.step("Open authorization window"):
             app.auth.open_login_window()
+            app.auth.select_enter_button()
 
-        with allure.step("Select feedback option"):
+        with allure.step("Fill authorization info"):
+            app.auth.fill_email_input(current_email)
+            app.auth.fill_password_input(current_password)
+
+        with allure.step("Open feedback page"):
+            app.auth.open_user_cabinet()
             app.main_page.select_feedback()
 
         with allure.step("Select question to ask"):

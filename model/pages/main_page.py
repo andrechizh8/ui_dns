@@ -10,9 +10,10 @@ class MainPage:
         return self
 
     def add_to_wishlist(self):
-        browser.element("button.button-ui.button-ui_white.button-ui_icon.wishlist-btn").with_(timeout=10).should(be.clickable).click()
+        browser.element("button.button-ui.button-ui_white.button-ui_icon.wishlist-btn").with_(timeout=10).should(
+            be.clickable).click()
         browser.element(".ui-link.ui-link_gray_dark").click()
-        browser.element(".wishlist-link-counter").click()
+        browser.element(".wishlist-link-counter").with_(timeout=3).should(be.clickable).click()
         browser.element("[class^='catalog-products']").should(
             have.text('6" Электронная книга Digma K2 серый [758x1024, E-Ink Pearl, подсветка, 1500 мА*ч]'))
         return self
@@ -26,8 +27,9 @@ class MainPage:
     def select_city(self, value):
         browser.element(".city-select__text_BTU").click()
         browser.all(".city-bubble_IBz").element_by(have.text(value)).click()
+        return self
 
-    def check_selected(self,value):
+    def check_selected(self, value):
         browser.element(".city-select__text_BTU").should(have.text(value))
         return self
 

@@ -4,7 +4,10 @@ from model.pages.profile_page import ProfilePage
 from model.pages.main_page import MainPage
 from model.pages.select_page import ProductSelectPage
 from model.pages.feedback_page import FeedbackPage
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 auth = Authorization()
 profile = ProfilePage()
 main_page = MainPage()
@@ -13,5 +16,5 @@ feedback = FeedbackPage()
 
 
 def given_opened():
-    url = "https://www.dns-shop.ru/"
+    url = os.getenv("BASE_URL")
     browser.open(url)

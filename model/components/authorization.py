@@ -5,7 +5,6 @@ from selene.support.shared import browser
 import allure
 
 
-
 class Authorization:
     def open_login_window(self):
         browser.element("//div[text()[contains(.,'Войти')]]").click()
@@ -41,4 +40,5 @@ class Authorization:
 
     def click_logout(self):
         browser.all("[class$='link_child']").element_by(have.text("Выйти")).click()
+        time.sleep(2)
         return self

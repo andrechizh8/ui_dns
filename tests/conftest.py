@@ -16,11 +16,8 @@ def browser_config():
     browser.config.window_height = 1080
     browser.config.timeout = 20
 
-    yield
-    browser.quit()
 
-
-@pytest.fixture(scope='function', autouse=True)
+@pytest.fixture(scope='function',autouse=True)
 def selenoid_config():
     options = Options()
     selenoid_capabilities = {

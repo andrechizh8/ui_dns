@@ -17,7 +17,7 @@ def browser_config():
     browser.config.timeout = 20
 
 
-@pytest.fixture(scope='function')
+@pytest.fixture(scope='function',autouse=True)
 def selenoid_config():
     options = Options()
     selenoid_capabilities = {

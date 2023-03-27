@@ -20,7 +20,7 @@ class TestUi:
     @allure.feature('UI')
     @allure.story('Login')
     @allure.severity(Severity.CRITICAL)
-    def test_login(self,selenoid_config):
+    def test_login(self):
         # GIVEN
         with allure.step("Open main page"):
             app.given_opened()
@@ -50,7 +50,7 @@ class TestUi:
     @allure.feature('UI')
     @allure.story('Profile')
     @allure.severity(Severity.CRITICAL)
-    def test_change_profile_data(self,selenoid_config):
+    def test_change_profile_data(self):
         # GIVEN
         with allure.step("Open main page"):
             app.given_opened()
@@ -92,7 +92,7 @@ class TestUi:
     @allure.feature('UI')
     @allure.story('Wishlist')
     @allure.severity(Severity.NORMAL)
-    def test_add_product_to_wishlist(self,selenoid_config):
+    def test_add_product_to_wishlist(self):
         # GIVEN
         with allure.step("Open main page"):
             app.given_opened()
@@ -113,7 +113,7 @@ class TestUi:
     @allure.feature('UI')
     @allure.story('ADD TO CART')
     @allure.severity(Severity.CRITICAL)
-    def test_select_product_with_params(self,selenoid_config):
+    def test_select_product_with_params(self):
         # GIVEN
         with allure.step("Open main page"):
             app.given_opened()
@@ -137,7 +137,7 @@ class TestUi:
     @allure.feature('UI')
     @allure.story('GEO')
     @allure.severity(Severity.CRITICAL)
-    def test_geo_change(self,selenoid_config):
+    def test_geo_change(self):
         # GIVEN
         with allure.step("Open main page"):
             app.given_opened()
@@ -155,7 +155,7 @@ class TestUi:
     @allure.feature('UI')
     @allure.story('GEO')
     @allure.severity(Severity.NORMAL)
-    def test_feedback(self,selenoid_config):
+    def test_feedback(self):
         # GIVEN
         with allure.step("Open main page"):
             app.given_opened()

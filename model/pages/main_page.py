@@ -10,7 +10,7 @@ class MainPage:
         return self
 
     def add_to_wishlist(self):
-        browser.element("button.button-ui.button-ui_white.button-ui_icon.wishlist-btn").should(be.clickable).click()
+        browser.element("button.button-ui.button-ui_white.button-ui_icon.wishlist-btn").with_(timeout=10).should(be.clickable).click()
         browser.element(".ui-link.ui-link_gray_dark").click()
         browser.element(".wishlist-link-counter").click()
         browser.element("[class^='catalog-products']").should(

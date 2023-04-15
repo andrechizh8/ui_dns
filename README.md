@@ -71,4 +71,4 @@
 
 После прохождения тестов с использованием Jenkins, в телеграмм приходит оповещение с результатами :
 
-![Альтернативный текст](https://github.com/andrechizh8/ui_dns/blob/main/readme%20files/dns6.png)
+![Альтернативный текст](https://github.com/andrechizh8/ui_dns/blob/main/readme%20files/dns_telegram.png)

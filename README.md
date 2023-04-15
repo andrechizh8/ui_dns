@@ -49,7 +49,7 @@
  ### Запуск в Jenkins : [JOB](https://jenkins.autotests.cloud/job/DNS/)
  
  Нажать на кнопку Собрать сейчас
-![Альтернативный текст](https://github.com/andrechizh8/ui_dns/blob/main/readme%20files/dns1.png)
+![Альтернативный текст](https://github.com/andrechizh8/ui_dns/blob/main/readme%20files/ui_jenkins.png)
 
 После сборки есть возможность посмотреть отчет с различными приложениями: 
 

@@ -1,8 +1,7 @@
 import time
 from selene import have, be
-from selene.support import by
 from selene.support.shared import browser
-import allure
+
 
 
 class Authorization:

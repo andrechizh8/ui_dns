@@ -57,6 +57,8 @@
 
 ![Альтернативный текст](https://github.com/andrechizh8/ui_dns/blob/main/readme%20files/dns2.png)
 
+Cсылка на Allure report : [Report](https://jenkins.autotests.cloud/job/DNS/60/allure/)
+
 Видео :
 
 ![Альтернативный текст](https://github.com/andrechizh8/ui_dns/blob/main/readme%20files/dns.gif)
